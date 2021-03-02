@@ -1,0 +1,11 @@
+zone "corp.rthomaz.com.br" {
+    type slave;
+    file "db.corp.rthomaz.com.br";
+    masters { 192.168.1.11; };  # ns1 private IP
+};
+
+zone "168.192.in-addr.arpa" {
+    type slave;
+    file "db.192.168";
+    masters { 192.168.1.11; };  # ns1 private IP
+};
