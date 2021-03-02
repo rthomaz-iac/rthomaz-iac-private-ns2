@@ -1,0 +1,20 @@
+acl "trusted" {
+        192.168.1.11;   # ns1
+        192.168.1.12;   # ns2 - can be set to localhost
+        192.168.1.15;  # jenkins
+        192.168.1.16;  # nexus
+};
+
+options {
+        directory "/var/cache/bind";
+                
+        recursion yes;
+        allow-recursion { trusted; };
+        listen-on { 192.168.1.12; };      # ns2 private IP address
+        allow-transfer { none; };          # disable zone transfers by default
+
+        forwarders {
+                8.8.8.8;
+                8.8.4.4;
+        };
+}
