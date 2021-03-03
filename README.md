@@ -9,6 +9,8 @@ Servidor de DNS Secundário de rede privada
 
 ### Pré-requisitos
 
+[Raspberry Pi 3 - Criando (sem-Domínio)](https://github.com/rthomaz-iac/rthomaz-iac-wiki/wiki/Raspberry-Pi-3-Criando-(sem-Dom%C3%ADnio))
+
 ### Instalação básica
 
 ## Usando
